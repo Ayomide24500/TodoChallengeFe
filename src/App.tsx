@@ -14,7 +14,7 @@ const App = () => {
   };
 
   const fetchData = () => {
-    const url: string = "http://localhost:1200/get-combine";
+    const url: string = "https://todochallenge1-1.onrender.com/get-combine";
 
     fetch(url, { method: "GET" })
       .then((res: any) => {
@@ -28,7 +28,7 @@ const App = () => {
   };
 
   const updateProgressData = (ID: string) => {
-    const url: string = `http://localhost:1200/progress/${ID}`;
+    const url: string = `https://todochallenge1-1.onrender.com/progress/${ID}`;
 
     fetch(url, { method: "PATCH" })
       .then((res: any) => {
@@ -43,7 +43,7 @@ const App = () => {
   };
 
   const changeToDone = (ID: string) => {
-    const url: string = `http://localhost:1200/done/${ID}`;
+    const url: string = `https://todochallenge1-1.onrender.com/done/${ID}`;
 
     fetch(url, { method: "PATCH" })
       .then((res: any) => {
