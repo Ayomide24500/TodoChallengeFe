@@ -2,13 +2,12 @@ import { useEffect, useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { IoCreateSharp } from "react-icons/io5";
 import moment from "moment";
-import { createTask } from "./Api/task";
 const App = () => {
   const [data, setData] = useState({});
   const [text, setText] = useState("");
   const [toggle, setToggle] = useState(false);
   // const [ID, setID] = useState("");
-  const [parent, enableAnimations] = useAutoAnimate();
+  const [parent] = useAutoAnimate();
 
   const onToggle = () => {
     setToggle(!toggle);

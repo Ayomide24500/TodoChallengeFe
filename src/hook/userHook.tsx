@@ -4,7 +4,7 @@ import { jwtDecode } from "jwt-decode";
 // import { useQuery } from "@tanstack/react-query"
 
 const userHook = () => {
-  const [state, setState] = useState({});
+  const [, setState] = useState({});
 
   let token = useSelector((state: any) => state.user);
 
