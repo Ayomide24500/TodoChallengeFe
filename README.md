@@ -1,30 +1,49 @@
-# React + TypeScript + Vite
+# todochallenge
+todo project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Overview**
 
-Currently, two official plugins are available:
+This project is a simple task manager built with React. It allows users to create tasks, mark them as in progress or completed, and view the tasks sorted by category.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Features**
 
-## Expanding the ESLint configuration
+- Create new tasks
+- Mark tasks as in progress or completed
+- View tasks sorted by category
+  
+**Installation**
+To run this project locally, follow these steps:
+git clone <repository-url>
+cd <project-directory>
+npm install
+npm run dev
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+```Typescript
+import { useEffect, useState } from "react";
+import { useAutoAnimate } from "@formkit/auto-animate/react";
+import { IoCreateSharp } from "react-icons/io5";
+import moment from "moment";
+import { createTask } from "./Api/task";
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+const App = () => {
+  //code here
+};
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+**Dependencies**
+This project uses the following dependencies:
+
+react: Typescript library for building user interfaces.
+@formkit/auto-animate/react: Library for automating animations in React.
+react-icons/io5: Icon library for React components.
+moment: Library for parsing, validating, manipulating, and formatting dates and times in JavaScript.
+
+**Usage**
+Launch the application by running npm start.
+Create tasks by clicking on the "+" icon in the "Tasks" section.
+Mark tasks as in progress or completed by clicking on the corresponding button.
+View tasks sorted by category.
+
+**Contributing**
+Contributions are welcome! If you find any bugs or have suggestions for improvement, please open an issue or submit a pull request.
+  
